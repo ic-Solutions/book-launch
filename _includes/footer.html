@@ -1,0 +1,19 @@
+<footer id="footer">
+	<div class="container">
+		<div class="col-md-12 text-center">
+			<p class="copyright">
+				<small>&copy;2018. All Rights Reserved.</small>
+				<em>
+					<small>Developed By
+						<a href="http://icsoln.com/" target="_blank">ICS</a>
+					</small>
+				</em>
+			</p>
+			<ul class="fh5co-social">
+				{% for item in site.data.social %}
+					<li><a href="{{item.link}}" target="_blank"><i class="{{item.icon}}"></i></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</footer>
