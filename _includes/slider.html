@@ -1,0 +1,23 @@
+<div class="fh5co-testimonial">
+	<div class="container">
+		<div class="row text-center fh5co-heading">
+			<h2>More Customer Review</h2>
+		</div>
+		<div class="owl-carousel owl-carousel-fullwidth">
+			{% for item in site.data.review %}
+			<div class="item">
+				<div class="testimony-slide active text-center">
+					<figure>
+						<img src="/images/{{item.url}}" alt="user">
+					</figure>
+					<span>{{item.name}}</span>
+					{% include star.html %}
+					<blockquote>
+						<p>&ldquo;{{item.quote}}&rdquo;</p>
+					</blockquote>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
