@@ -1,0 +1,16 @@
+<div class="row row-pb-md">
+	{% for item in site.data.review %}
+	<div class="col-md-4">
+		<div class="review text-center">
+			<figure>
+				<img src="/images/{{item.url}}" alt="user">
+			</figure>
+			<span>{{item.name}}</span>
+			{% include star.html %}
+			<blockquote>
+				<p>&ldquo;{{item.quote}}&rdquo;</p>
+			</blockquote>
+		</div>
+	</div>
+	{% endfor %}
+</div>
